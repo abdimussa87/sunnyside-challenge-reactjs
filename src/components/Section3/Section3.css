@@ -1,0 +1,29 @@
+.section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: var(--spacing) 0;
+}
+.section3__profileContainer{
+    width: 30%;
+    height: 30%;
+}
+.section3__profileContainer>img{
+    width: 100%;
+    height: 100%;
+    border-radius:50%;
+}
+.section3__textContainer{
+    text-align: center;
+}
+.section3__textContainer p{
+    margin: var(--spacing);
+}
+.section3__textContainer h5{
+    margin: 0.8rem;
+}
+.section3__textContainer h6{
+    color: var(--blueGrey);
+
+}

@@ -1,0 +1,121 @@
+.header {
+  color: white;
+  height: 60%;
+  position: relative;
+}
+.header__image {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  /* object-fit: contain; */
+}
+.header__title {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+.header__title h3 {
+  text-align: center;
+}
+
+.header__title > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 80px;
+}
+.header__content {
+  padding: var(--spacing);
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 10%; */
+}
+
+.header__logo {
+  flex: 2;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.header__hamburger {
+  cursor: pointer;
+}
+.header__mobileContainer {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+}
+.header__mobileMenu {
+  margin: 0 auto;
+  background-color: white;
+  color: var(--blueGrey);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.header__mobileNavItem {
+  padding: var(--spacing);
+  cursor: pointer;
+  
+}
+.header__mobileNavItemActive {
+    background-color: var(--yellow);
+    color: var(--blueDark);
+    text-transform: uppercase;
+    border-radius: 25px;
+    margin-bottom: var(--spacing);
+  }
+.header__nav {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+.header__navItem {
+  padding: calc(var(--spacing) / 2) var(--spacing);
+  margin: 0 0.2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+}
+.header__navItem:hover {
+  background-color: white;
+  color: var(--blueDark);
+}
+
+.header__navItemActive {
+  background-color: white;
+  color: var(--blueDark);
+  text-transform: uppercase;
+}
+.header__bottom {
+  height: 90%;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__content {
+    /* flex-direction: column; */
+  }
+  .header__nav {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header__mobileContainer {
+    display: none;
+  }
+  .header__title {
+    top: 20%;
+  }
+  .header__title h3 {
+    letter-spacing: 2px;
+  }
+}

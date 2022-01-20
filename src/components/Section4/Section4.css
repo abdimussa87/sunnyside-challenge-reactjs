@@ -1,0 +1,15 @@
+.section4{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section4 img{
+    width: 50%;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .section4 img{
+      width: 25%;
+    }
+  }
+  

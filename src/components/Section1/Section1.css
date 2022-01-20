@@ -1,0 +1,48 @@
+.section1 {
+  display: flex;
+}
+.section1__left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: var(--spacing) 0;
+}
+.section1__left > h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.section1__left > p {
+  margin: var(--spacing);
+  text-align: center;
+}
+
+.section1__left > button {
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.section1__right {
+  flex: 1;
+}
+
+.section1__right > img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .section1 {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .reverse {
+    flex-direction: row-reverse;
+  }
+}

@@ -1,0 +1,38 @@
+.section2 {
+  position: relative;
+  padding: 0;
+}
+.section2 > img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.section2__content {
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: var(--spacing);
+}
+
+.section2__content > h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.section2__content > p {
+  margin: var(--spacing);
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .section2 > img {
+    height: 70%;
+    display: flex;
+  }
+  .section2__content{
+      bottom: 30%;
+  }
+}
